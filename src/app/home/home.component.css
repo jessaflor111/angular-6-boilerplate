@@ -18,9 +18,12 @@
 .ftIcon {
     width: 20px;
     height: auto;
-    border-style: solid;
 }
 
 .ftButtons {
     width: 500px;
+}
+
+.titlefont {
+    font-family: 'Playfair Display SC', serif;
 }
