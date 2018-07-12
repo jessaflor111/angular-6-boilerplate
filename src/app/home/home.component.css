@@ -3,7 +3,7 @@
     bottom: 0;
     z-index: 1;
     border-style: solid;
-    text-align: center;
+    /* text-align: center; */
  }
  
  .space {
@@ -13,4 +13,14 @@
 
 .btnborder {
     border-style: solid;
+}
+
+.ftIcon {
+    width: 20px;
+    height: auto;
+    border-style: solid;
+}
+
+.ftButtons {
+    width: 500px;
 }
