@@ -11,19 +11,26 @@
      padding-right: 10px;
  }
 
-.btnborder {
+.ftIcon {
+    width: 20%;
+    height: auto;
     border-style: solid;
 }
 
-.ftIcon {
-    width: 20px;
-    height: auto;
-}
-
 .ftButtons {
-    width: 500px;
+    background: rgb(31, 28, 24);
 }
 
 .titlefont {
     font-family: 'Playfair Display SC', serif;
 }
+
+.mutinybg {
+    background: url("https://files.slack.com/files-pri/T8TBSJ9S9-FBP9G4PS8/skull_dark_bg.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+ }
