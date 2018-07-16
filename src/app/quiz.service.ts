@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class QuizService {
+<<<<<<< Updated upstream
   
   constructor(private router: Router ) { 
     this.router = router;
@@ -170,3 +171,10 @@ export class QuizService {
   ]
   
   }
+=======
+  //All our qui logic exist here, Define your variables here
+  
+  description = "I am a string inside of the service";
+  constructor() { }
+}
+>>>>>>> Stashed changes
