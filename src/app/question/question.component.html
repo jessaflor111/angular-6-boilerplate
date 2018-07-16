@@ -31,47 +31,35 @@
                         <li class="list-group-item list-group-item-action list-group-item-light" *ngFor="let choice of this.quiz.questions[this.quiz.currentQuestion].choices">  
                             
 
-                            <button type="button" class="btn btn-light">{{ choice.a }}</button>
+                            <!-- on click needs to record value and tally to specific result will probably have to use a function -->
+                            <button  type="button" class="btn btn-light"  >{{ choice.a }}</button>
                         </li>
 
 
-
-                        <!-- <li class="list-group-item list-group-item-action list-group-item-light">
-                            
-                            <button type="button" class="btn btn-light">Let's sail to the Tasmanian Peninsula!</button>
-                        </li>
-
-
-                        <li class="list-group-item list-group-item-action list-group-item-light">
-                           
-                            <button type="button" class="btn btn-light">Let's sail to the Tasmanian Peninsula!</button>
-                        </li>
-
-                        <li class="list-group-item list-group-item-action list-group-item-light">
-                            
-                            <button type="button" class="btn btn-light">Let's sail to the Tasmanian Peninsula!</button>                    
-                            </li> -->
 
                     </ul>
                 
             </div>
             <div class="card-body ">
                 <button (click)="this.quiz.goPrevQuestion()" class="btn btn-warning float-left">Back</button>
-                <button (click)="this.quiz.goNextQuestion()"  class="btn btn-warning float-right">Next</button>
+                <button (click)="this.quiz.goNextQuestion()"  class="btn btn-warning float-right">Next</button><br><br><br>
+
+                <button (click)="this.quiz.goNextQuestion()"  class="btn btn-danger float-center p-2 btnSub">SUBMIT</button>
+
             </div>
             <br>
 
 
 
-            <!-- needs to navigate to each page, -->
+            <!-- needs to navigate to each page, on click -->
 
             <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                 <div class="btn-group m-auto" role="group" aria-label="First group">
-                    <button (click)="this.quiz.goToDirect()" class="btn btn-secondary">1</button>
-                    <button (click)="this.quiz.goToDirect()" class="btn btn-secondary">2</button>
-                    <button (click)="this.quiz.goToDirect()" class="btn btn-secondary">3</button>
-                    <button (click)="this.quiz.goToDirect()" class="btn btn-secondary">4</button>
-                    <button (click)="this.quiz.goToDirect()" class="btn btn-secondary">5</button>
+                    <button type="button" class="btn btn-secondary">1</button>
+                    <button type="button" class="btn btn-secondary">2</button>
+                    <button type="button" class="btn btn-secondary">3</button>
+                    <button type="button" class="btn btn-secondary">4</button>
+                    <button type="button" class="btn btn-secondary">5</button>
                 </div>
             </div>
 
