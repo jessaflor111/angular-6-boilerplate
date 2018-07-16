@@ -1,55 +1,85 @@
-<br><br><br><br>
-<div class="container text-center">
-<h1>Would you survive a Mutiny?</h1>
-<br><br><br>
-<div class="card text-white bg-dark m-auto" style="width: 40rem;">
-  <img class="card-img-top" src="assets/quizApp/pirate-main.png"  alt="Card image cap">
-  <div class="card-body">
-    <h2>You are captain of your ship out at sea, what is your first quest?</h2>
-    
-  <ul class="list-group list-group-flush">
-
-    <li class="list-group-item list-group-item-action list-group-item-dark"><h6>Let's sail to find the fountain of youth!</h6>
-      
-
-    </li>
-
-    
-    <li class="list-group-item list-group-item-action list-group-item-dark">
-        <h6>Let's sail to the Tasmanian Peninsula</h6>
-
-
-    </li>
-
-
-    <li class="list-group-item list-group-item-action list-group-item-dark">
-        <h6>Let's sail to the Tasmanian Peninsula</h6>
-
-
-    </li>
-
-    <li class="list-group-item list-group-item-action list-group-item-dark">
-        <h6>Let's sail to the Tasmanian Peninsula</h6>
-
-
-    </li>
-  </ul>
-  <div class="card-body">
-      <button type="button" class="btn btn-warning">Back</button>
-      <button type="button" class="btn btn-warning">Next</button>
-  </div>
-  <br>
-  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-      <div class="btn-group m-auto" role="group" aria-label="First group">
-        <button type="button" class="btn btn-secondary">1</button>
-        <button type="button" class="btn btn-secondary">2</button>
-        <button type="button" class="btn btn-secondary">3</button>
-        <button type="button" class="btn btn-secondary">4</button>
-      </div>
-</div>
-
 <br>
+<br>
+<br>
+<br>
+<div class="container text-center bodybg">
+        
+    <h1>Would you survive a Mutiny?</h1>
+    <br>
+    <br>
+    <br>
+    <div class="card text-white bg-dark m-auto" style="width: 40rem;">
+        <img class="card-img-top" src="assets/quizApp/pirate-main.png" alt="Card image cap">
+        <div class="card-body">
+
+            <!-- THIS IS WHERE THE CARD BODY STARTS -->
+            <!-- THE NUMBERS IN THE BUTTON SEQUENCE NEED TO NAVIGATE TO EACH DIFFERENT QUESTION AND ANSWER IN THE SAME ORDER THEY ARE LISTED INSIDE THE OBJECT "QUESTION" -->
+            <div class="container">
+
+                
+                    <ul class="list-group list-group-flush">
+                        
+
+                        <li>
+
+                            <!-- <h2>{{ question.title }}</h2> -->
+
+                        <h2>{{ this.quiz.questions[this.quiz.currentQuestion].title }}</h2>
+                    
+                       </li>
+
+                        <li class="list-group-item list-group-item-action list-group-item-light" *ngFor="let choice of this.quiz.questions[this.quiz.currentQuestion].choices">  
+                            
+
+                            <button type="button" class="btn btn-light">{{ choice.a }}</button>
+                        </li>
 
 
 
-</div>
+                        <!-- <li class="list-group-item list-group-item-action list-group-item-light">
+                            
+                            <button type="button" class="btn btn-light">Let's sail to the Tasmanian Peninsula!</button>
+                        </li>
+
+
+                        <li class="list-group-item list-group-item-action list-group-item-light">
+                           
+                            <button type="button" class="btn btn-light">Let's sail to the Tasmanian Peninsula!</button>
+                        </li>
+
+                        <li class="list-group-item list-group-item-action list-group-item-light">
+                            
+                            <button type="button" class="btn btn-light">Let's sail to the Tasmanian Peninsula!</button>                    
+                            </li> -->
+
+                    </ul>
+                
+            </div>
+            <div class="card-body ">
+                <button (click)="this.quiz.goPrevQuestion()" class="btn btn-warning float-left">Back</button>
+                <button (click)="this.quiz.goNextQuestion()"  class="btn btn-warning float-right">Next</button>
+            </div>
+            <br>
+
+
+
+            <!-- needs to navigate to each page, -->
+
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group m-auto" role="group" aria-label="First group">
+                    <button (click)="this.quiz.goToDirect()" class="btn btn-secondary">1</button>
+                    <button (click)="this.quiz.goToDirect()" class="btn btn-secondary">2</button>
+                    <button (click)="this.quiz.goToDirect()" class="btn btn-secondary">3</button>
+                    <button (click)="this.quiz.goToDirect()" class="btn btn-secondary">4</button>
+                    <button (click)="this.quiz.goToDirect()" class="btn btn-secondary">5</button>
+                </div>
+            </div>
+
+
+
+
+            <br>
+
+
+
+        </div>

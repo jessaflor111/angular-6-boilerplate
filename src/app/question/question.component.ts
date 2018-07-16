@@ -10,8 +10,7 @@ export class QuestionComponent implements OnInit {
 
   constructor(private quiz: QuizService) {
     this.quiz = quiz;
-    //shows description define in the QuizService
-    console.log(this.quiz.description);
+    
    }
 
   ngOnInit() {
