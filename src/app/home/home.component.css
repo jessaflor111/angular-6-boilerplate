@@ -11,18 +11,9 @@
      padding-right: 10px;
  }
 
-.ftIcon {
-    width: 20%;
-    height: auto;
-    border-style: solid
-}
-
-.ftButtons {
-    background: rgb(31, 28, 24);
-}
-
 .titlefont {
     font-family: 'Playfair Display SC', serif;
+    font-size: 75px;
 }
 
 .mutinybg {
@@ -34,3 +25,29 @@
     background-position: center;
     text-align: center;
  }
+ .linkbtn {
+     display: block;
+     width: auto;
+     background: rgb(31, 28, 24);
+     border: 1px solid #000;
+     color: white;
+ }
+
+
+.card {
+    background: rgb(31, 28, 24);
+    color: whitesmoke;
+    }
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+}
