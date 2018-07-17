@@ -3,6 +3,7 @@
 h1 {
     font-family: 'Playfair Display SC', serif;
     font-size: 75px;
+    text-shadow: 3px 3px 5px #000000;
 }
 
 h2 {
@@ -24,4 +25,20 @@ ul {
 .btnSub {
     font-size: 1.25em;
     font-weight: 600 !important;
+}
+
+.card-body-bg {
+    background-color: rgba(0, 0, 0, 0.801) !important;
+}
+
+.mutiny {
+    background: url("../../assets/quizApp/skull_dark_bg.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+ }
+ button:focus{
+    background:#94906a !important;
 }

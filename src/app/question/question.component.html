@@ -1,14 +1,16 @@
-<br>
-<br>
-<br>
-<br>
-<div class="container text-center bodybg">
+
+<div class="mutiny">
+        <br>
+        <br>
+        <br>
+        <br>
+<div class="container text-center">
         
     <h1>Would you survive a Mutiny?</h1>
     <br>
     <br>
     <br>
-    <div class="card text-white bg-dark m-auto" style="width: 40rem;">
+    <div class="card text-white bg-dark m-auto card-body-bg" style="width: 40rem;">
         <img class="card-img-top" src="assets/quizApp/pirate-main.png" alt="Card image cap">
         <div class="card-body">
 
@@ -24,7 +26,7 @@
 
                             <!-- <h2>{{ question.title }}</h2> -->
 
-                        <h2>{{ this.quiz.questions[this.quiz.currentQuestion].title }}</h2>
+                        <h2 class="pb-3">{{ this.quiz.questions[this.quiz.currentQuestion].title }}</h2>
                     
                        </li>
 
@@ -32,7 +34,7 @@
                             
 
                             <!-- on click needs to record value and tally to specific result will probably have to use a function -->
-                            <button  type="button" class="btn btn-light"  >{{ choice.a }}</button>
+                            <button type="button" class="btn btn-light" >{{ choice.a }}</button>
                         </li>
 
 
@@ -71,3 +73,4 @@
 
 
         </div>
+    </div>

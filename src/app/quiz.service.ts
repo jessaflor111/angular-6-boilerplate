@@ -31,8 +31,12 @@ export class QuizService {
   
   goNextQuestion() {
     if (this.questions.length -1 > this.currentQuestion) {
+
+
       this.currentQuestion++;
       this.router.navigate(['/question', this.currentQuestion]);
+
+
     } else {
       
       //end of questions
@@ -41,8 +45,16 @@ export class QuizService {
       this.caculateResult();
     }
   }
+
+  selectedA() {
+    console.log("clicked");
+  }
+
   caculateResult(){
-    //will generate results 
+    //will generate results will use if & else or terinary in order to calculate result
+    
+
+    
   }
   
   questions=[
