@@ -1,9 +1,5 @@
 
 <div class="mutiny">
-        <br>
-        <br>
-        <br>
-        <br>
 <div class="container text-center">
         
     <h1>Would you survive a Mutiny?</h1>
@@ -24,17 +20,22 @@
 
                         <li>
 
-                            <!-- <h2>{{ question.title }}</h2> -->
+                          
 
-                        <h2 class="pb-3">{{ this.quiz.questions[this.quiz.currentQuestion].title }}</h2>
+                        <h2>{{ this.quiz.questions[this.quiz.currentQuestion].title }}</h2>
                     
                        </li>
 
-                        <li class="list-group-item list-group-item-action list-group-item-light" *ngFor="let choice of this.quiz.questions[this.quiz.currentQuestion].choices">  
+                        <li class="list-group-item list-group-item-action list-group-item-light" *ngFor="let choice of this.quiz.questions[this.quiz.currentQuestion].choices; let i = index">  
                             
 
-                            <!-- on click needs to record value and tally to specific result will probably have to use a function -->
-                            <button type="button" class="btn btn-light" >{{ choice.a }}</button>
+                            <!-- on click needs to record value and tally to specific result will probably have to use a function
+                                 HEEEEEREEE-->
+
+
+                            <button (click)="this.quiz.recordAnswer(i)" type="button" class="btn btn-light" >{{ choice.a }}</button>
+
+
                         </li>
 
 
@@ -42,26 +43,29 @@
                     </ul>
                 
             </div>
-            <div class="card-body ">
-                <button (click)="this.quiz.goPrevQuestion()" class="btn btn-warning float-left">Back</button>
-                <button (click)="this.quiz.goNextQuestion()"  class="btn btn-warning float-right">Next</button><br><br><br>
+            <!-- <div class="card-body ">
+                <button (click)="this.quiz.goPrevQuestion()" class="btn btn-warning float-left">Back</button> -->
 
-                <button (click)="this.quiz.goNextQuestion()"  class="btn btn-danger float-center p-2 btnSub">SUBMIT</button>
 
-            </div>
+            <!-- here  -->
+                <!-- <button (click)="this.quiz.goNextQuestion() this.quiz.recordAnswer()"  class="btn btn-warning float-right" *ngHide="onLastQuestion">Next</button><br><br><br>
+
+                <button  class="btn btn-danger float-center p-2 btnSub" >SUBMIT</button> -->
+
+            <!-- </div> -->
             <br>
 
 
 
             <!-- needs to navigate to each page, on click -->
+            <!-- HEREEEEEE -->
 
             <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                 <div class="btn-group m-auto" role="group" aria-label="First group">
-                    <button type="button" class="btn btn-secondary">1</button>
-                    <button type="button" class="btn btn-secondary">2</button>
-                    <button type="button" class="btn btn-secondary">3</button>
-                    <button type="button" class="btn btn-secondary">4</button>
-                    <button type="button" class="btn btn-secondary">5</button>
+
+                    <!-- <button *ngFor="let question of questions" 
+                    type="button" class="btn btn-secondary">1</button> -->
+                   
                 </div>
             </div>
 
