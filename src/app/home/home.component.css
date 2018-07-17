@@ -28,26 +28,35 @@
  .linkbtn {
      display: block;
      width: auto;
-     background: rgb(31, 28, 24);
-     border: 1px solid #000;
-     color: white;
+     /* background: rgb(31, 28, 24); */
+     /* border: 1px solid #000; */
+     color: #ffc107;
  }
 
 
 .card {
-    background: rgb(31, 28, 24);
+    background: rgba(31, 28, 24, 0.582);
     color: whitesmoke;
+
     }
 
 button {
-    background-color: #4CAF50;
+    /* background-color: #4CAF50; */
     border: none;
     color: white;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 35px;
+    margin-top: 150px;
     border-radius: 50%;
+}
+
+hr {
+    background-color: #ffc107;
+}
+
+.qst {
+    font-family: 'Raleway', sans-serif;
 }
