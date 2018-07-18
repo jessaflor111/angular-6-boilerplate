@@ -52,10 +52,10 @@ export class QuizService {
 
   recordAnswer(index) {
 
-    alert(index);
+    
     let p = this.questions[this.currentQuestion].choices[index].value;
     this.questions[this.currentQuestion].selectedAnswer = p;
-    alert(p);
+    
     console.log(p);
 
     this.userResults.push(p);
