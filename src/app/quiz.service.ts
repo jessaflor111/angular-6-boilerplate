@@ -21,7 +21,7 @@ export class QuizService {
         endResult:
         {
           titleFinal: "OH NO!",
-          image: "image here",
+          imgURL: "../../assets/quizApp/piratemutiny.png",
           desc: "You're crew has turned against you!"
         },
       },
@@ -30,7 +30,7 @@ export class QuizService {
         endResult:
         {
           titleFinal: "Watch out!",
-          image: "image here",
+          imgURL: "../../assets/quizApp/piratewatch.png",
           desc: "There's whispers of mutiny amongst the crew"
         },
       },
@@ -39,7 +39,7 @@ export class QuizService {
         endResult:
         {
           titleFinal: "Congratulations",
-          image: "image here",
+          imgURL: "../../assets/quizApp/piratewinner.png",
           desc: " You're a great captain!!"
         }
       }
