@@ -1,97 +1,92 @@
-
 <div class="mutiny">
-<div class="container text-center">
-        
-    <h1>Would you survive a Mutiny?</h1>
-    <br>
-    <br>
-    <br>
-    <div class="card text-white bg-dark m-auto card-body-bg" style="width: 40rem;">
-        <img class="card-img-top" src="assets/quizApp/pirate-main.png" alt="Card image cap">
-        <div class="card-body">
+    <div class="container text-center">
 
-            <!-- THIS IS WHERE THE CARD BODY STARTS -->
-            <!-- THE NUMBERS IN THE BUTTON SEQUENCE NEED TO NAVIGATE TO EACH DIFFERENT QUESTION AND ANSWER IN THE SAME ORDER THEY ARE LISTED INSIDE THE OBJECT "QUESTION" -->
-            <div class="container">
+        <h1>Would you survive a Mutiny?</h1>
+        <br>
+        <br>
+        <br>
+        <div class="card text-white bg-dark m-auto card-body-bg" style="width: 40rem;">
+            <img class="card-img-top" src="assets/quizApp/pirate-main.png" alt="Card image cap">
+            <div class="card-body">
 
-                
+                <!-- THIS IS WHERE THE CARD BODY STARTS -->
+                <!-- THE NUMBERS IN THE BUTTON SEQUENCE NEED TO NAVIGATE TO EACH DIFFERENT QUESTION AND ANSWER IN THE SAME ORDER THEY ARE LISTED INSIDE THE OBJECT "QUESTION" -->
+                <div class="container">
+
+
                     <ul class="list-group list-group-flush">
-                        
+
 
                         <li>
 
-                          
 
-                        <h2>{{ this.quiz.questions[this.quiz.currentQuestion].title }}</h2>
-                    
-                       </li>
 
-                        <li class="list-group-item list-group-item-action list-group-item-light" *ngFor="let choice of this.quiz.questions[this.quiz.currentQuestion].choices; let i = index" (click)="this.quiz.recordAnswer(i)">  
-                            
+                            <h2>{{ this.quiz.questions[this.quiz.currentQuestion].title }}</h2>
+
+                        </li>
+
+                        <li class="list-group-item list-group-item-action list-group-item-light" *ngFor="let choice of this.quiz.questions[this.quiz.currentQuestion].choices; let i = index"
+                            (click)="this.quiz.recordAnswer(i)">
+
 
                             <!-- on click needs to record value and tally to specific result will probably have to use a function
                                  HEEEEEREEE-->
 
 
-                            <button (click)="this.quiz.recordAnswer(i)" type="button" class="btn btn-light" >{{ choice.a }}</button>
+                            <button (click)="this.quiz.recordAnswer(i)" type="button" class="btn btn-light">{{ choice.a }}</button>
 
 
                         </li>
-=======
-    </li>
-  </ul>
-  <div class="card-body">
-      <button (click)="this.quiz.prevQuestion()" type="button" class="btn btn-warning">Back</button>
-      <button type="button" class="btn btn-warning">Next</button>
-  </div>
-  <br>
-  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-      <div class="btn-group m-auto" role="group" aria-label="First group">
-        <button type="button" class="btn btn-secondary">1</button>
-        <button type="button" class="btn btn-secondary">2</button>
-        <button type="button" class="btn btn-secondary">3</button>
-        <button type="button" class="btn btn-secondary">4</button>
-      </div>
-</div>
->>>>>>> Stashed changes
 
-
-
+                        
                     </ul>
-                
-            </div>
-            <!-- <div class="card-body ">
+                    <!-- <div class="card-body">
+                        <button (click)="this.quiz.prevQuestion()" type="button" class="btn btn-warning">Back</button>
+                        <button type="button" class="btn btn-warning">Next</button>
+                    </div>
+                    <br>
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group m-auto" role="group" aria-label="First group">
+                            <button type="button" class="btn btn-secondary">1</button>
+                            <button type="button" class="btn btn-secondary">2</button>
+                            <button type="button" class="btn btn-secondary">3</button>
+                            <button type="button" class="btn btn-secondary">4</button>
+                        </div>
+                    </div> -->
+
+                </div>
+                <!-- <div class="card-body ">
                 <button (click)="this.quiz.goPrevQuestion()" class="btn btn-warning float-left">Back</button> -->
 
 
-            <!-- here  -->
+                <!-- here  -->
                 <!-- <button (click)="this.quiz.goNextQuestion() this.quiz.recordAnswer()"  class="btn btn-warning float-right" *ngHide="onLastQuestion">Next</button><br><br><br>
 
                 <button  class="btn btn-danger float-center p-2 btnSub" >SUBMIT</button> -->
 
-            <!-- </div> -->
-            <br>
+                <!-- </div> -->
+                <br>
 
 
 
-            <!-- needs to navigate to each page, on click -->
-            <!-- HEREEEEEE -->
+                <!-- needs to navigate to each page, on click -->
+                <!-- HEREEEEEE -->
 
-            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                <div class="btn-group m-auto" role="group" aria-label="First group">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group m-auto" role="group" aria-label="First group">
 
-                    <!-- <button *ngFor="let question of questions" 
+                        <!-- <button *ngFor="let question of questions" 
                     type="button" class="btn btn-secondary">1</button> -->
-                   
+
+                    </div>
                 </div>
+
+
+
+
+                <br>
+
+
+
             </div>
-
-
-
-
-            <br>
-
-            
-
         </div>
-    </div>
