@@ -21,7 +21,7 @@ export class QuizService {
         endResult:
         {
           titleFinal: "OH NO!",
-          imgURL: "../assets/quizApp/piratemutiny.png",
+          imgURL: "../assets/quizApp/captainmutiny.png",
           desc: "You're crew has turned against you!"
         },
       },
@@ -112,7 +112,7 @@ export class QuizService {
 
     } else if (this.result > 15 && this.result <= 20) {
 
-      this.result = this.finalResults[1];
+      this.result = this.finalResults[2];
       console.log(this.result);
 
     }
