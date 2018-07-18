@@ -42,3 +42,7 @@ ul {
  button:focus{
     background:#94906a !important;
 }
+
+.list-group-item:focus {
+    background:#94906a !important;
+}
