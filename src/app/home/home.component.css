@@ -2,8 +2,9 @@
     position: sticky;
     bottom: 0;
     z-index: 1;
-    border-style: solid;
+    /* border-style: solid; */
     /* text-align: center; */
+    font-size: 1.4em;
  }
  
  .space {
