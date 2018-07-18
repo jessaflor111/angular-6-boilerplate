@@ -1,0 +1,64 @@
+.sticky {
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    border-style: solid;
+    /* text-align: center; */
+ }
+ 
+ .space {
+     padding-left: 10px;
+     padding-right: 10px;
+ }
+
+.titlefont {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 75px;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+.mutinybg {
+    background: url("https://files.slack.com/files-pri/T8TBSJ9S9-FBP9G4PS8/skull_dark_bg.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+ }
+ .linkbtn {
+     display: block;
+     width: auto;
+     /* background: rgb(31, 28, 24); */
+     /* border: 1px solid #000; */
+     color: #ffc107;
+     text-shadow: 3px 3px 5px #000000;
+ }
+
+
+.card {
+    background: rgba(31, 28, 24, 0.582);
+    color: whitesmoke;
+
+    }
+
+button {
+    /* background-color: #4CAF50; */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    margin-top: 150px;
+   
+}
+
+hr {
+    background-color: #ffc107;
+}
+
+.qst {
+    font-family: 'Raleway', sans-serif;
+}
