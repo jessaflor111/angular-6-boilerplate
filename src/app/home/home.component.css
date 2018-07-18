@@ -19,7 +19,7 @@
 }
 
 .mutinybg {
-    background: url("https://files.slack.com/files-pri/T8TBSJ9S9-FBP9G4PS8/skull_dark_bg.jpg");
+    background: url("../../assets/quizApp/skull_dark_bg.png");
     height: 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;

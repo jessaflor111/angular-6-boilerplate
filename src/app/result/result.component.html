@@ -1,8 +1,9 @@
-<h1 class="text-center">Mutiny At Sea</h1>
 
 
 <div class="card text-center mutiny">
-  <div class="container bg-dark text card-header text-left">
+  <br>
+  <h1 class="text-center">Mutiny At Sea</h1>
+  <div class="container bg-dark text card-header text-left font card-body-bg">
     Did You Survive?
     <a class="float-right" (click)="quiz.onClick()" routerLink="/">
       <i class="fas fa-redo"></i> Retake Quiz </a>
@@ -18,9 +19,7 @@
       <p class="card-text">
         {{ quiz.result.endResult.desc }}
       </p>
-      <a routerLink="/question/1" class="btn btn-outline-warning">
-        Review Answers
-      </a>
+     
     </div>
   </div>
 </div>
