@@ -20,27 +20,27 @@ export class QuizService {
         endScore: 2,
         endResult:
         {
-          titleFinal: "1 title goes here",
-          image: "image here",
-          desc: "decription goes here"
+          titleFinal: "OH NO!",
+          imgURL: "../../assets/quizApp/piratemutiny.png",
+          desc: "You're crew has turned against you!"
         },
       },
       {
         endScore: 4,
         endResult:
         {
-          titleFinal: "2 title goes here",
-          image: "image here",
-          desc: "decription goes here"
+          titleFinal: "Watch out!",
+          imgURL: "../../assets/quizApp/piratewatch.png",
+          desc: "There's whispers of mutiny amongst the crew"
         },
       },
       {
         endScore: 6,
         endResult:
         {
-          titleFinal: "3 title goes here",
-          image: "image here",
-          desc: "decription goes here"
+          titleFinal: "Congratulations",
+          imgURL: "../../assets/quizApp/piratewinner.png",
+          desc: " You're a great captain!!"
         }
       }
     ];
@@ -139,19 +139,19 @@ export class QuizService {
       selectedAnswer: 0,
       choices: [
         {
-          a: 'Sail the open Sea',
+          a: 'Namastay sailing',
           value: 1
         },
         {
-          a: 'Steal an adversary ship',
+          a: 'Sail into the sea of monsters seeking rumored treasure',
           value: 2
         },
         {
-          a: 'Voyage to find a hidden treasure',
+          a: 'Attack an East India Trading Ship in hopes of stealing their cargo',
           value: 3
         },
         {
-          a: 'namastay sailing',
+          a: 'Sail to the port of Tortuga and head to the nearest brothel',
           value: 4
         }
       ],
@@ -159,23 +159,23 @@ export class QuizService {
 
     {
       id: 2,
-      title: "The next question of the quiz goes here?",
+      title: "Supply is scarce and food is running low, how do you handle this situation? ",
       selectedAnswer: 0,
       choices: [
         {
-          a: 'first answer goes here',
+          a: 'Force a sword fighting tournament to the death, winners get the losers food',
           value: 1
         },
         {
-          a: 'second answer goes here',
+          a: 'Hide half the rations for yourself and split the rest amongst your crew',
           value: 2
         },
         {
-          a: 'third answer goes here',
+          a: 'Start a fist fighting tournament where the winners get most amount food',
           value: 3
         },
         {
-          a: 'fourth answer goes here',
+          a: 'Split it evenly amongst everyone',
           value: 4
         }
       ],
@@ -184,23 +184,23 @@ export class QuizService {
     {
 
       id: 3,
-      title: "The next question of the quiz goes here?2",
+      title: "After getting loot from an enemy ship, your crew starts squabbling about the amount divided. Some say some hid during battle while some said they fought more. How do you resolve dividing the shares?",
       selectedAnswer: 0,
       choices: [
         {
-          a: 'first answer goes here2',
+          a: 'Keep all the loot',
           value: 1
         },
         {
-          a: 'second answer goes here2',
+          a: 'Split the loot evenlly',
           value: 2
         },
         {
-          a: 'third answer goes here2',
+          a: 'Give the loot to your First Mate and have him figure it out',
           value: 3
         },
         {
-          a: 'fourth answer goes here2',
+          a: 'Let the accusers play a game of Liar’s Dice. Winners take all.',
           value: 4
         }
       ],
@@ -208,23 +208,23 @@ export class QuizService {
 
     {
       id: 4,
-      title: "The next question of the quiz goes here?3",
+      title: "You have been hit by a terrible storm and have of your crew is either sick or dying and your ship is damaged, what do you do?",
       selectedAnswer: 0,
       choices: [
         {
-          a: 'first answer goes here3',
+          a: 'Attack & commandeer the nearest ship and leave the sick and dying behind',
           value: 1
         },
         {
-          a: 'second answer goes here3',
+          a: 'Throw the sick and dying overboard to save the rest of the crew.',
           value: 2
         },
         {
-          a: 'third answer goes here3',
+          a: 'Head South to rumored lands seeking ObamaCare',
           value: 3
         },
         {
-          a: 'fourth answer goes here3',
+          a: 'Continue on your quest North and wait until you reach land and safety',
           value: 4
         }
       ],
@@ -233,23 +233,23 @@ export class QuizService {
     },
     {
       id: 5,
-      title: "The next question of the quiz goes here?",
+      title: "You just finished a 6 month expedition to paradise. It is time go and sail for another 10-months, but most of crew does not want to leave. How do you break it to them?",
       selectedAnswer: 0,
       choices: [
         {
-          a: 'first answer goes here%',
+          a: 'Those opposed are traitors and summon them to death!',
           value: 1
         },
         {
-          a: 'second answer goes here%',
+          a: 'Get them drunk and convince them out to sea',
           value: 2
         },
         {
-          a: 'third answer goes here%',
+          a: 'Take a poll and winning tally decides wether you stay or go',
           value: 3
         },
         {
-          a: 'fourth answer goes here%',
+          a: 'Allow those who wish to remain to stay',
           value: 4
         }
       ],
