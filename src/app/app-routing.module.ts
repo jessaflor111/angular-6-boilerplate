@@ -7,7 +7,7 @@ import { ResultComponent } from './result/result.component';
 // STEP 3 
 const routes: Routes = [
   {
-    path: "",
+    path: "home",
     component: HomeComponent
   },
   {
@@ -20,7 +20,7 @@ const routes: Routes = [
   },
   {
     path: "",
-    redirectTo: "/",
+    redirectTo: "/home",
     pathMatch: "full"
   }
 ];
