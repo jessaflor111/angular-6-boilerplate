@@ -9,14 +9,14 @@
     <hr class="bg-warning">
     <div class="row">
         <div class="col card-text text-center">
-          <img class="width 250px" src="{{ quiz.result.endResult.imgURL }}">
+          <img class="w-75" src="{{ quiz.result.endResult.imgURL }}">
         </div>
     <div class="col card-body text-center">
       <h5 class="card-title">
-        {{ quiz.result.title }}
+        {{ quiz.result.endResult.titleFinal }}
       </h5>
       <p class="card-text">
-        {{ quiz.result.description }}
+        {{ quiz.result.endResult.desc }}
       </p>
       <a routerLink="/question/1" class="btn btn-outline-warning">
         Review Answers

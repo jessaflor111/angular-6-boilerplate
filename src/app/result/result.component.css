@@ -13,11 +13,28 @@ h1 {
 .container {
     width: 45%;
     margin-top: 162px;
-    height: 50%;
+    height: 70%;
 }
 a {
     color: gold;
 }
 .resultImage {
     width: 260px;
+}
+.size {
+    object-fit: cover;
+    height: 35vh;
+    max-width: 125%;
+}
+h5 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 3em;
+}
+p {
+    font-family: 'Bad Script', cursive;
+    font-size: 2em;
+
+}
+.font, a {
+    font-family: 'Raleway', sans-serif;
 }
