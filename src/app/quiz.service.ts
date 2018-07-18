@@ -12,45 +12,98 @@ export class QuizService {
   }
   
   currentQuestion = 0;
-
-  goToDirect(){
-    
-    this.router.navigate(['/question']);
-    ;
-  }
-  
-  goPrevQuestion(){
-    if (this.currentQuestion > 0) {
-      this.currentQuestion--;
-      //will go to previous question
-      this.router.navigate([`/question/${this.currentQuestion}`]);
-    } else {
-      //return home
-      this.router.navigate([`/`]);
+  result=0;
+ 
+  finalResults= [
+    {
+      endScore: "Low", 
+      titleFinal: "title goes here",
+      image: "image here",
+      desc: "decription goes here"
+    },
+    {
+      endScore: "Middle", 
+      titleFinal: "title goes here",
+      image: "image here",
+      desc: "decription goes here"
+    },
+    {
+      endScore: "High", 
+      titleFinal: "title goes here",
+      image: "image here",
+      desc: "decription goes here"
     }
-  }
+  ]
+
+// SUM of Tallies
+
   
-  goNextQuestion() {
-    if (this.questions.length -1 > this.currentQuestion) {
+// msg = "";
+
+  recordAnswer(index){
+ 
+alert(index);
+ let p = this.questions[this.currentQuestion].choices[index].value;
+ this.questions[this.currentQuestion].selectedAnswer = p;
+    alert(p);
+    console.log(p);
+    
+    // let p = this.questions
+    // [this.currentQuestion].choices;
+   
+    // let y = this.questions[currentQuestion]
+
+    // p.forEach((e) => {
+    //   console.log(e.value)
+    //   userResult.push(e.value);
+    //   console.log("this is the new array");
+    //   console.log(userResult);
+    // });
+   
+
+    if(this.questions.length -1 > this.currentQuestion) {
+      // console.log(p);
       this.currentQuestion++;
       this.router.navigate(['/question', this.currentQuestion]);
     } else {
-      
-      //end of questions
-    
-      this.router.navigate([`/result`]);
+
       this.caculateResult();
+      this.router.navigate(['/result']);
+
     }
+
   }
+
+
+
   caculateResult(){
-    //will generate results 
+    //will generate results will use if & else or terinary in order to calculate result
+   
+    // if(this.result <= 10) {
+
+
+    //   this.finalResults.final;
+
+
+    // } else if(this.result > 10 && this.result <= 15) {
+
+    //   this.finalResults.final;
+
+
+    // } else if(this.result > 15 && this.result <= 20) {
+
+    //   this.finalResults.final;
+    // }
   }
+
+
+
   
-  questions=[
+  questions = [
     {
       id: 1,
       title: "You are Captian of The Black Pearl, what is your first quest?",
-      selectedAnswer: '',
+      selectedAnswer: 0,
       choices:[
         {
           a: 'Sail the open Sea',
@@ -74,7 +127,7 @@ export class QuizService {
     {
       id: 2,
       title: "The next question of the quiz goes here?",
-      selectedAnswer: '',
+      selectedAnswer: 0,
       choices:[
         {
           a: 'first answer goes here',
@@ -99,7 +152,7 @@ export class QuizService {
 
       id: 3,
       title: "The next question of the quiz goes here?2",
-      selectedAnswer: '',
+      selectedAnswer: 0,
       choices:[
         {
           a: 'first answer goes here2',
@@ -123,7 +176,7 @@ export class QuizService {
     {
       id: 4,
       title: "The next question of the quiz goes here?3",
-      selectedAnswer: '',
+      selectedAnswer: 0,
       choices:[
         {
           a: 'first answer goes here3',
@@ -148,7 +201,7 @@ export class QuizService {
     {
       id: 5,
       title: "The next question of the quiz goes here?",
-      selectedAnswer: '',
+      selectedAnswer: 0,
       choices:[
         {
           a: 'first answer goes here%',
@@ -171,10 +224,16 @@ export class QuizService {
   ]
   
   }
-=======
-  //All our qui logic exist here, Define your variables here
-  
-  description = "I am a string inside of the service";
-  constructor() { }
-}
->>>>>>> Stashed changes
+
+
+
+ // goPrevQuestion(){
+  //   if (this.currentQuestion > 0) {
+  //     this.currentQuestion--;
+  //     //will go to previous question
+  //     this.router.navigate([`/question/${this.currentQuestion}`]);
+  //   } else {
+  //     //return home
+  //     this.router.navigate([`/`]);
+  //   }
+  // }

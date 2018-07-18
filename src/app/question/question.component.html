@@ -1,14 +1,12 @@
-<br>
-<br>
-<br>
-<br>
-<div class="container text-center bodybg">
+
+<div class="mutiny">
+<div class="container text-center">
         
     <h1>Would you survive a Mutiny?</h1>
     <br>
     <br>
     <br>
-    <div class="card text-white bg-dark m-auto" style="width: 40rem;">
+    <div class="card text-white bg-dark m-auto card-body-bg" style="width: 40rem;">
         <img class="card-img-top" src="assets/quizApp/pirate-main.png" alt="Card image cap">
         <div class="card-body">
 
@@ -22,30 +20,22 @@
 
                         <li>
 
-                            <!-- <h2>{{ question.title }}</h2> -->
+                          
 
                         <h2>{{ this.quiz.questions[this.quiz.currentQuestion].title }}</h2>
                     
                        </li>
 
-                        <li class="list-group-item list-group-item-action list-group-item-light" *ngFor="let choice of this.quiz.questions[this.quiz.currentQuestion].choices">  
+                        <li class="list-group-item list-group-item-action list-group-item-light" *ngFor="let choice of this.quiz.questions[this.quiz.currentQuestion].choices; let i = index" (click)="this.quiz.recordAnswer(i)">  
                             
 
-                            <button type="button" class="btn btn-light">{{ choice.a }}</button>
-                        </li>
+                            <!-- on click needs to record value and tally to specific result will probably have to use a function
+                                 HEEEEEREEE-->
 
 
-
-                        <!-- <li class="list-group-item list-group-item-action list-group-item-light">
-                            
-                            <button type="button" class="btn btn-light">Let's sail to the Tasmanian Peninsula!</button>
-                        </li>
+                            <button (click)="this.quiz.recordAnswer(i)" type="button" class="btn btn-light" >{{ choice.a }}</button>
 
 
-<<<<<<< Updated upstream
-                        <li class="list-group-item list-group-item-action list-group-item-light">
-                           
-                            <button type="button" class="btn btn-light">Let's sail to the Tasmanian Peninsula!</button>
                         </li>
 =======
     </li>
@@ -65,31 +55,34 @@
 </div>
 >>>>>>> Stashed changes
 
-                        <li class="list-group-item list-group-item-action list-group-item-light">
-                            
-                            <button type="button" class="btn btn-light">Let's sail to the Tasmanian Peninsula!</button>                    
-                            </li> -->
+
 
                     </ul>
                 
             </div>
-            <div class="card-body ">
-                <button (click)="this.quiz.goPrevQuestion()" class="btn btn-warning float-left">Back</button>
-                <button (click)="this.quiz.goNextQuestion()"  class="btn btn-warning float-right">Next</button>
-            </div>
+            <!-- <div class="card-body ">
+                <button (click)="this.quiz.goPrevQuestion()" class="btn btn-warning float-left">Back</button> -->
+
+
+            <!-- here  -->
+                <!-- <button (click)="this.quiz.goNextQuestion() this.quiz.recordAnswer()"  class="btn btn-warning float-right" *ngHide="onLastQuestion">Next</button><br><br><br>
+
+                <button  class="btn btn-danger float-center p-2 btnSub" >SUBMIT</button> -->
+
+            <!-- </div> -->
             <br>
 
 
 
-            <!-- needs to navigate to each page, -->
+            <!-- needs to navigate to each page, on click -->
+            <!-- HEREEEEEE -->
 
             <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                 <div class="btn-group m-auto" role="group" aria-label="First group">
-                    <button (click)="this.quiz.goToDirect()" class="btn btn-secondary">1</button>
-                    <button (click)="this.quiz.goToDirect()" class="btn btn-secondary">2</button>
-                    <button (click)="this.quiz.goToDirect()" class="btn btn-secondary">3</button>
-                    <button (click)="this.quiz.goToDirect()" class="btn btn-secondary">4</button>
-                    <button (click)="this.quiz.goToDirect()" class="btn btn-secondary">5</button>
+
+                    <!-- <button *ngFor="let question of questions" 
+                    type="button" class="btn btn-secondary">1</button> -->
+                   
                 </div>
             </div>
 
@@ -101,3 +94,4 @@
 
 
         </div>
+    </div>
