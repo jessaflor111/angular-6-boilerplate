@@ -13,8 +13,11 @@ h1 {
 .container {
     width: 45%;
     margin-top: 162px;
-    height: 31%;
+    height: 50%;
 }
 a {
     color: gold;
+}
+.resultImage {
+    width: 260px;
 }

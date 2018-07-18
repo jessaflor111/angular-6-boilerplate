@@ -2,19 +2,25 @@
 
 
 <div class="card text-center mutiny">
-    <div class="container bg-dark text card-header text-left">
-       Did You Survive?
-       <a class="float-right" routerLink="/"> <i class="fas fa-redo"></i> Retake Quiz </a>
-       <hr class="bg-warning">
+  <div class="container bg-dark text card-header text-left">
+    Did You Survive?
+    <a class="float-right" (click)="quiz.onClick()" routerLink="/">
+      <i class="fas fa-redo"></i> Retake Quiz </a>
+    <hr class="bg-warning">
+    <div class="row">
+        <div class="col card-text text-center resultImage">
+          {{ this.result.image }}
+        </div>
     <div class="col card-body text-center">
-      <h5 class="card-title">SO CLOSE!</h5>
+      <h5 class="card-title">
+        {{ this.result.title }}
+      </h5>
       <p class="card-text">
-        You almost made it out!
+        {{ this.result.description }}
       </p>
-      <a routerLink="/question/5" class="btn btn-warning text-white mt-4">
+      <a routerLink="/question/1" class="btn btn-outline-warning">
         Review Answers
       </a>
     </div>
   </div>
-  </div>
-  
+</div>
