@@ -36,6 +36,7 @@ ul {
 .mutiny {
     background: url("https://i.imgur.com/3fAiWSr.png");
     background-attachment: fixed;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
