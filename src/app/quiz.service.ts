@@ -208,7 +208,7 @@ export class QuizService {
 
     {
       id: 4,
-      title: "You have been hit by a terrible storm and have of your crew is either sick or dying and your ship is damaged, what do you do?",
+      title: "You have been hit by a terrible storm and half of your crew is either sick or dying and your ship is damaged, what do you do?",
       selectedAnswer: 0,
       choices: [
         {
