@@ -5,7 +5,6 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class QuizService {
-
   constructor(private router: Router) {
     this.router = router;
   }
