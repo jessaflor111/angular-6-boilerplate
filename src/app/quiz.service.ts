@@ -21,7 +21,7 @@ export class QuizService {
         endResult:
         {
           titleFinal: "OH NO!",
-          imgURL: "../assets/quizApp/captainmutiny.png",
+          imgURL: "https://i.imgur.com/vmxaKK4.png",
           desc: "You're crew has turned against you!"
         },
       },
@@ -30,7 +30,7 @@ export class QuizService {
         endResult:
         {
           titleFinal: "Watch out!",
-          imgURL: "../assets/quizApp/piratewatch.png",
+          imgURL: "https://i.imgur.com/rK2sn05.png",
           desc: "There's whispers of mutiny amongst the crew"
         },
       },
@@ -39,7 +39,7 @@ export class QuizService {
         endResult:
         {
           titleFinal: "Congratulations",
-          imgURL: "../assets/quizApp/piratewinner.png",
+          imgURL: "https://i.imgur.com/0fNNRZy.png",
           desc: " You're a great captain!!"
         }
       }
@@ -139,20 +139,20 @@ export class QuizService {
       selectedAnswer: 0,
       choices: [
         {
-          a: 'Namastay sailing',
-          value: 1
-        },
-        {
           a: 'Sail into the sea of monsters seeking rumored treasure',
           value: 2
+        },
+        {
+          a: 'Sail to the port of Tortuga and head to the nearest brothel',
+          value: 4
         },
         {
           a: 'Attack an East India Trading Ship in hopes of stealing their cargo',
           value: 3
         },
         {
-          a: 'Sail to the port of Tortuga and head to the nearest brothel',
-          value: 4
+          a: 'Namastay sailing',
+          value: 1
         }
       ],
     },
@@ -163,20 +163,20 @@ export class QuizService {
       selectedAnswer: 0,
       choices: [
         {
-          a: 'Force a sword fighting tournament to the death, winners get the losers food',
-          value: 1
+          a: 'Split it evenly amongst everyone',
+          value: 4
         },
         {
-          a: 'Hide half the rations for yourself and split the rest amongst your crew',
-          value: 2
+          a: 'Force a sword fighting tournament to the death, winners get the losers food',
+          value: 1
         },
         {
           a: 'Start a fist fighting tournament where the winners get most amount food',
           value: 3
         },
         {
-          a: 'Split it evenly amongst everyone',
-          value: 4
+          a: 'Hide half the rations for yourself and split the rest amongst your crew',
+          value: 2
         }
       ],
     },
@@ -188,20 +188,20 @@ export class QuizService {
       selectedAnswer: 0,
       choices: [
         {
-          a: 'Keep all the loot',
-          value: 1
+          a: 'Give the loot to your First Mate and have him figure it out',
+          value: 3
         },
         {
           a: 'Split the loot evenlly',
           value: 2
         },
         {
-          a: 'Give the loot to your First Mate and have him figure it out',
-          value: 3
-        },
-        {
           a: 'Let the accusers play a game of Liar’s Dice. Winners take all.',
           value: 4
+        },
+        {
+          a: 'Keep all the loot',
+          value: 1
         }
       ],
     },
@@ -216,16 +216,16 @@ export class QuizService {
           value: 1
         },
         {
-          a: 'Throw the sick and dying overboard to save the rest of the crew.',
-          value: 2
+          a: 'Continue on your quest North and wait until you reach land and safety',
+          value: 4
         },
         {
           a: 'Head South to rumored lands seeking ObamaCare',
           value: 3
         },
         {
-          a: 'Continue on your quest North and wait until you reach land and safety',
-          value: 4
+          a: 'Throw the sick and dying overboard to save the rest of the crew.',
+          value: 2
         }
       ],
 
@@ -237,22 +237,22 @@ export class QuizService {
       selectedAnswer: 0,
       choices: [
         {
-          a: 'Those opposed are traitors and summon them to death!',
-          value: 1
-        },
-        {
-          a: 'Get them drunk and convince them out to sea',
-          value: 2
-        },
-        {
           a: 'Take a poll and winning tally decides wether you stay or go',
           value: 3
         },
         {
           a: 'Allow those who wish to remain to stay',
           value: 4
+        },
+        {
+          a: 'Those opposed are traitors and summon them to death!',
+          value: 1
+        },
+        {
+          a: 'Get them drunk and convince them out to sea',
+          value: 2
         }
-      ],
+      ]
     }
   ]
 
