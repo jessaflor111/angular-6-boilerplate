@@ -14,16 +14,16 @@ h1 {
     text-shadow: 3px 3px 5px #000000;
 }
 .container {
-    width: 45%;
+    width: auto;
     margin-top: 125px;
-    height: 55%;
+    height: auto;
     margin-bottom: 80px;
 }
 a {
     color: gold;
 }
 .resultImage {
-    width: 260px;
+    width: 55%;
 }
 .size {
     object-fit: cover;
@@ -32,13 +32,14 @@ a {
 }
 h5 {
     font-family: 'Playfair Display SC', serif;
-    font-size: 3em;
+    font-size: 6.5vw;
     text-shadow: 3px 3px 5px #000000;
 }
 p {
     font-family: 'Bad Script', cursive;
-    font-size: 2em;
-    text-shadow: 3px 3px 5px #000000;
+    font-size: 4.5vw;
+    color: gold;
+    text-shadow: 3px 3px 5px #252525e0;
 
 }
 .font, a {
@@ -48,3 +49,4 @@ p {
 .card-body-bg {
     background-color: rgba(0, 0, 0, 0.801) !important;
 }
+

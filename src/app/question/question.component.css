@@ -8,7 +8,7 @@ h1 {
 
 h2 {
     font-family: 'Bad Script', cursive;
-    text-shadow: 3px 3px 5px #000000;
+    text-shadow: 1px 1px 3px #000000;
 }
 
 h6 {
@@ -29,14 +29,28 @@ ul {
     font-weight: 600 !important;
 }
 
+
+
 .card-body-bg {
     background-color: rgba(0, 0, 0, 0.801) !important;
+    height: 105vh;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
+
+.jumbo-body-bg {
+    background-color: rgba(0, 0, 0, 0.801) !important;
+}
+::after, ::before {
+    box-sizing: border-box;
+}
+
 
 .mutiny {
     background: url("https://i.imgur.com/3fAiWSr.png");
     background-attachment: fixed;
-    height: auto;
+    height: 140vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -45,6 +59,13 @@ ul {
  button:focus{
     background:#94906a !important;
 }
-.card-img-top {
-    height: auto;
-}
+.card-img-top{
+    width:100%;
+    height:auto;
+    
+  }
+  .btn {
+      white-space: normal;
+  }
+
+
