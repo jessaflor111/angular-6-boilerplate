@@ -80,6 +80,7 @@ export class QuizService {
 
   onClick(){
     window.location.reload();
+    this.router.navigate(['/home']);
   }
 
 
