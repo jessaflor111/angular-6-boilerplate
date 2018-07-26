@@ -1,23 +1,52 @@
-
-
-h1 {
-    font-family: 'Playfair Display SC', serif;
-    font-size: 55px;
-    text-shadow: 5px 5px 7px #000000;
+@media screen and (min-width:601px) {
+    h1 {
+        font-family: 'Playfair Display SC', serif;
+        font-size: 8vh;
+        text-shadow: 5px 5px 7px #000000;
+        padding: 20px 5px 5px 5px;
+    }
+}
+@media screen and (max-width:600px) {
+    h1 {
+        font-family: 'Playfair Display SC', serif;
+        font-size: 5vh;
+        text-shadow: 5px 5px 7px #000000;
+        padding: 30px 5px 15px 5px;
+    }
 }
 
-h2 {
-    font-family: 'Bad Script', cursive;
-    text-shadow: 1px 1px 3px #000000;
+@media screen and (min-width:601px) {
+    h2 {
+        font-family: 'Bad Script', cursive;
+        text-shadow: 1px 1px 3px #000000;
+        font-size: 30px;
+    }
 }
+@media screen and (max-width:600px) {
+    h2 {
+        font-family: 'Bad Script', cursive;
+        text-shadow: 1px 1px 3px #000000;
+        font-size: 20px;
+    }
+}
+
 
 h6 {
     font-family: 'Raleway', sans-serif;
 }
 
-.btn {
-    font-family: 'Raleway', sans-serif !important;
-    font-size: 1.1em;
+@media screen and (min-width:601px){
+    .btn {
+        font-family: 'Raleway', sans-serif !important;
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width:600px){
+    .btn {
+        font-family: 'Raleway', sans-serif !important;
+        font-size: .7em;
+    }
 }
 
 ul {
@@ -34,13 +63,17 @@ ul {
 .card-body-bg {
     background-color: rgba(0, 0, 0, 0.801) !important;
     height: 105vh;
+    width: auto;
     display: flex;
     flex-wrap: wrap;
+    
     
 }
 
 .jumbo-body-bg {
     background-color: rgba(0, 0, 0, 0.801) !important;
+    padding-top: 25px; 
+    padding-bottom: 25px;
 }
 ::after, ::before {
     box-sizing: border-box;
@@ -59,11 +92,19 @@ ul {
  button:focus{
     background:#94906a !important;
 }
-.card-img-top{
-    width:100%;
-    height:auto;
-    
-  }
+@media screen and (min-width:601px){
+    .image{
+        width:55vh;
+        height: auto;
+        
+    }
+}
+@media screen and (max-width:600px){
+    .image{
+        width:40vh;
+        height:auto;
+    }
+}
   .btn {
       white-space: normal;
   }

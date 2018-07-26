@@ -8,10 +8,20 @@
     text-align: center;
     
 }
+
 h1 {
     font-family: 'Playfair Display SC', serif;
     font-size: 75px;
     text-shadow: 3px 3px 5px #000000;
+}
+
+@media screen and (max-width:600px){
+    h1 {
+        font-family: 'Playfair Display SC', serif;
+        font-size: 7vh;
+        text-shadow: 4px 4px 6px #000000;
+        padding: 30px 5px 3px 5px;
+    }
 }
 .container {
     width: auto;

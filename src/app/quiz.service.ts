@@ -158,7 +158,7 @@ export class QuizService {
 
     {
       id: 2,
-      title: "Supply is scarce and food is running low, how do you handle this situation? ",
+      title: "Supply is scarce & food is running low, how do you handle this? ",
       selectedAnswer: 0,
       choices: [
         {
@@ -183,7 +183,7 @@ export class QuizService {
     {
 
       id: 3,
-      title: "After getting loot from an enemy ship, your crew starts squabbling about the amount divided. Some say some hid during battle while some said they fought more. How do you resolve dividing the shares?",
+      title: "After winning loot from an enemy ship, your crew is squabbling because some hid during battle. How do you divide the shares?",
       selectedAnswer: 0,
       choices: [
         {
@@ -207,7 +207,7 @@ export class QuizService {
 
     {
       id: 4,
-      title: "You have been hit by a terrible storm and half of your crew is either sick or dying and your ship is damaged, what do you do?",
+      title: "You have been hit by a terrible storm, half of your crew is either sick or dying & your ship is damaged, what do you do?",
       selectedAnswer: 0,
       choices: [
         {
@@ -232,7 +232,7 @@ export class QuizService {
     },
     {
       id: 5,
-      title: "You just finished a 6 month expedition to paradise. It is time go and sail for another 10-months, but most of crew does not want to leave. How do you break it to them?",
+      title: "You just finished a 6-month expedition to paradise. It is time go and sail for another 10-months, but most of crew does not want to leave. How do you break it to them?",
       selectedAnswer: 0,
       choices: [
         {
