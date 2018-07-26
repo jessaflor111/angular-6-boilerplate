@@ -81,8 +81,8 @@ export class QuizService {
   onClick(){
     this.userResults = [];
     console.log(this.userResults);
-    this.router.navigate(['/home']);
     window.location.reload();
+    this.router.navigate(['/home']);
 
 
   }
