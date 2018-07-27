@@ -79,13 +79,13 @@ export class QuizService {
   }
 
   onClick(){
-    this.userResults = [];
-    console.log(this.userResults);
     window.location.reload();
     this.router.navigate(['/home']);
 
 
   }
+
+ 
 
 
 
