@@ -78,13 +78,7 @@ export class QuizService {
 
   }
 
-  onClick(){
-    window.location.reload();
-    this.router.navigate(['/home']);
-
-
-  }
-
+ 
  
 
 
@@ -121,6 +115,12 @@ export class QuizService {
 
     }
   }
+
+  onClick(){
+    this.result = 0;
+    this.userResults = [];
+  }
+
 
   // restartQuiz(){
   //   if (this.currentQuestion > 0) {
